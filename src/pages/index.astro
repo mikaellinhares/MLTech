@@ -1,16 +1,166 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="MLTech - Soluções em Tecnologia" description="Transformamos ideias em soluções tecnológicas inovadoras. Desenvolvemos aplicações web, desktop e automações personalizadas.">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Transformamos <span class="text-blue-200">ideias</span> em
+          <br />
+          <span class="text-blue-200">soluções tecnológicas</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          Desenvolvemos aplicações web, desktop e automações personalizadas 
+          para impulsionar o crescimento do seu negócio.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/contato"
+            class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
+          >
+            Fale Conosco
+          </a>
+          <a
+            href="/portfolio"
+            class="border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
+          >
+            Ver Portfólio
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Nossos Serviços
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Oferecemos soluções completas em tecnologia para atender às necessidades do seu negócio
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Web Development -->
+        <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow duration-200">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Desenvolvimento Web</h3>
+          <p class="text-gray-600 mb-6">
+            Criamos sites e aplicações web modernas, responsivas e otimizadas para performance.
+          </p>
+          <a href="/servicos" class="text-blue-600 font-medium hover:text-blue-700">
+            Saiba mais →
+          </a>
+        </div>
+
+        <!-- Desktop Applications -->
+        <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow duration-200">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Aplicações Desktop</h3>
+          <p class="text-gray-600 mb-6">
+            Desenvolvemos aplicações desktop robustas e intuitivas para Windows, macOS e Linux.
+          </p>
+          <a href="/servicos" class="text-blue-600 font-medium hover:text-blue-700">
+            Saiba mais →
+          </a>
+        </div>
+
+        <!-- Automation -->
+        <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow duration-200">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Automações</h3>
+          <p class="text-gray-600 mb-6">
+            Automatizamos processos repetitivos para aumentar a eficiência e reduzir custos.
+          </p>
+          <a href="/servicos" class="text-blue-600 font-medium hover:text-blue-700">
+            Saiba mais →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Por que escolher a MLTech?
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Nossa experiência e compromisso com a qualidade fazem a diferença
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-blue-600">5+</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Anos de Experiência</h3>
+          <p class="text-gray-600 text-sm">Trabalhando com tecnologia e inovação</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-green-600">50+</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Projetos Entregues</h3>
+          <p class="text-gray-600 text-sm">Soluções personalizadas para cada cliente</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-purple-600">24/7</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Suporte Técnico</h3>
+          <p class="text-gray-600 text-sm">Estamos sempre disponíveis para ajudar</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-orange-600">100%</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Satisfação</h3>
+          <p class="text-gray-600 text-sm">Clientes satisfeitos com nossos serviços</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-blue-600">
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Pronto para transformar sua ideia em realidade?
+      </h2>
+      <p class="text-xl text-blue-100 mb-8">
+        Entre em contato conosco e descubra como podemos ajudar seu negócio a crescer com tecnologia.
+      </p>
+      <a
+        href="/contato"
+        class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors duration-200 inline-block"
+      >
+        Começar Projeto
+      </a>
+    </div>
+  </section>
+</Layout>

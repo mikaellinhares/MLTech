@@ -1,43 +1,91 @@
-# Astro Starter Kit: Minimal
+# MLTech - Portfólio
 
-```sh
-npm create astro@latest -- --template minimal
+Site portfólio da MLTech desenvolvido com Astro e TailwindCSS.
+
+## 🚀 Deploy no GitHub Pages
+
+### Configuração Automática (Recomendado)
+
+1. **Configure o GitHub Pages no repositório:**
+   - Vá para Settings > Pages
+   - Source: GitHub Actions
+   - Branch: main
+
+2. **Push para o repositório:**
+   ```bash
+   git add .
+   git commit -m "Deploy inicial"
+   git push origin main
+   ```
+
+3. **O deploy será automático!** 
+   - Acesse: `https://mikaellinhares.github.io/MLTech`
+
+### Deploy Manual (Alternativo)
+
+1. **Build do projeto:**
+   ```bash
+   npm run build
+   ```
+
+2. **Deploy para GitHub Pages:**
+   ```bash
+   npm run deploy
+   ```
+
+## 🛠️ Desenvolvimento Local
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar em modo desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview do build
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📁 Estrutura do Projeto
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+src/
+├── components/     # Componentes reutilizáveis
+├── layouts/        # Layouts das páginas
+├── pages/          # Páginas do site
+│   ├── portfolio/  # Páginas individuais dos projetos
+│   └── ...
+└── styles/         # Estilos globais
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🌐 URLs do Site
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Home:** `https://mikaellinhares.github.io/MLTech/`
+- **Portfólio:** `https://mikaellinhares.github.io/MLTech/portfolio`
+- **Contato:** `https://mikaellinhares.github.io/MLTech/contato`
+- **Serviços:** `https://mikaellinhares.github.io/MLTech/servicos`
+- **Sobre:** `https://mikaellinhares.github.io/MLTech/sobre`
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 📱 Projetos do Portfólio
 
-## 🧞 Commands
+1. **Sistema de Inventário de Estoque**
+   - URL: `/portfolio/sistema-inventario-estoque`
+   - Tecnologias: Python, Flask, Pandas, SQLAlchemy
 
-All commands are run from the root of the project, from a terminal:
+2. **Automação de Crédito Imobiliário**
+   - URL: `/portfolio/automacao-credito-imobiliario`
+   - Tecnologias: Python, Flask, Selenium
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+3. **Integração Magazord x Posthaus**
+   - URL: `/portfolio/integracao-magazord-posthaus`
+   - Tecnologias: Python, Flask, Cron Jobs, FTP, API REST
 
-## 👀 Want to learn more?
+## 🔧 Tecnologias Utilizadas
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Astro** - Framework para sites estáticos
+- **TailwindCSS** - Framework CSS utilitário
+- **GitHub Pages** - Hospedagem estática
+- **GitHub Actions** - Deploy automático
