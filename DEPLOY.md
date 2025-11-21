@@ -46,10 +46,11 @@ export default defineConfig({
 });
 ```
 
-### 3. Habilitar GitHub Pages
+### 3. Habilitar GitHub Pages ⚠️ IMPORTANTE
 1. Vá para **Settings** > **Pages** no seu repositório
-2. Em **Source**, selecione **GitHub Actions**
+2. Em **Source**, selecione **GitHub Actions** (NÃO use "Deploy from a branch")
 3. Salve as configurações
+4. **ESSENCIAL**: Se você ver a opção "Deploy from a branch" selecionada, o site NÃO funcionará. Você DEVE selecionar "GitHub Actions"
 
 ### 4. Deploy Automático
 - Faça push para a branch `main`

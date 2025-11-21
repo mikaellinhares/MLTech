@@ -8,7 +8,8 @@ Site portfólio da MLTech desenvolvido com Astro e TailwindCSS.
 
 1. **Configure o GitHub Pages no repositório:**
    - Vá para Settings > Pages
-   - Source: GitHub Actions
+   - ⚠️ **IMPORTANTE**: Em "Source", selecione **"GitHub Actions"**
+   - NÃO selecione "Deploy from a branch" (isso usará Jekyll e causará erro)
    - Branch: main
 
 2. **Push para o repositório:**
@@ -89,3 +90,23 @@ src/
 - **TailwindCSS** - Framework CSS utilitário
 - **GitHub Pages** - Hospedagem estática
 - **GitHub Actions** - Deploy automático
+
+## 🚨 Troubleshooting
+
+### Erro: "Invalid YAML front matter" ou "jekyll-build-pages"
+
+**Problema**: O GitHub Pages está tentando usar Jekyll ao invés de Astro.
+
+**Solução**:
+1. Vá para **Settings** > **Pages** no seu repositório
+2. Em **Source**, mude de "Deploy from a branch" para **"GitHub Actions"**
+3. Salve e faça um novo commit/push
+4. O arquivo `.nojekyll` na pasta `public/` garante que Jekyll não seja usado
+
+### Erro: Links não funcionam ou página em branco
+
+**Problema**: Configuração incorreta do `base` no `astro.config.mjs`.
+
+**Solução**:
+- Verifique se `base: '/MLTech'` está configurado corretamente
+- O nome deve corresponder ao nome do seu repositório GitHub
