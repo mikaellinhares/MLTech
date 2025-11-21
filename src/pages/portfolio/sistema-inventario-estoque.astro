@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Sistema de Inventário de Estoque - MLTech" description="Sistema completo para controle de inventário, gestão de estoque e movimentações de produtos desenvolvido pela MLTech.">
@@ -211,13 +212,13 @@ import Layout from '../../layouts/Layout.astro';
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href="/contato"
+          href={`${baseUrl}contato`}
           class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors duration-200 inline-block"
         >
           Solicitar Orçamento
         </a>
         <a
-          href="/portfolio"
+          href={`${baseUrl}portfolio`}
           class="border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200 inline-block"
         >
           Ver Outros Projetos

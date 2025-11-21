@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Automação de Simulação de Crédito Imobiliário - MLTech" description="Sistema automatizado para simulação e análise de crédito imobiliário desenvolvido pela MLTech.">
@@ -272,13 +273,13 @@ import Layout from '../../layouts/Layout.astro';
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href="/contato"
+          href={`${baseUrl}contato`}
           class="bg-white text-green-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-50 transition-colors duration-200 inline-block"
         >
           Solicitar Orçamento
         </a>
         <a
-          href="/portfolio"
+          href={`${baseUrl}portfolio`}
           class="border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors duration-200 inline-block"
         >
           Ver Outros Projetos

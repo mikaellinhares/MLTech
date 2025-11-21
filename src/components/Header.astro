@@ -1,11 +1,12 @@
 ---
 // Navegação do site
+const baseUrl = import.meta.env.BASE_URL;
 const navItems = [
-  { href: '/', label: 'Início' },
-  { href: '/sobre', label: 'Sobre' },
-  { href: '/servicos', label: 'Serviços' },
-  { href: '/portfolio', label: 'Portfólio' },
-  { href: '/contato', label: 'Contato' }
+  { href: `${baseUrl}`, label: 'Início' },
+  { href: `${baseUrl}sobre`, label: 'Sobre' },
+  { href: `${baseUrl}servicos`, label: 'Serviços' },
+  { href: `${baseUrl}portfolio`, label: 'Portfólio' },
+  { href: `${baseUrl}contato`, label: 'Contato' }
 ];
 ---
 
@@ -14,7 +15,7 @@ const navItems = [
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a href="/" class="flex items-center">
+        <a href={baseUrl} class="flex items-center">
           <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
             <span class="text-white font-bold text-lg">M</span>
           </div>
@@ -39,7 +40,7 @@ const navItems = [
       <!-- CTA Button -->
       <div class="hidden md:block">
         <a
-          href="/contato"
+          href={`${baseUrl}contato`}
           class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
         >
           Fale Conosco
@@ -72,7 +73,7 @@ const navItems = [
           </a>
         ))}
         <a
-          href="/contato"
+          href={`${baseUrl}contato`}
           class="bg-blue-600 text-white block px-3 py-2 rounded-lg text-base font-medium hover:bg-blue-700 mt-4"
         >
           Fale Conosco
